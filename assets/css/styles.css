@@ -3,8 +3,15 @@
     box-sizing: border-box;
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
+
+}
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /*
@@ -23,6 +30,7 @@ header{
     width: 100%;
     background-color: #ffffff;
     border-bottom: 5px solid #cccccc;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 footer{
@@ -59,6 +67,7 @@ h3{
     padding: 30px 0 20px 0;
     border-bottom: 5px solid #cccccc;
     text-align: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 h4{
@@ -98,6 +107,12 @@ Main Layout
     padding: 0 20px 20px 20px;
 }
 
+.alt-background{
+    background: #60645f;
+	background: -moz-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(128,128,128,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(192,192,192,1) 0%, rgba(128,128,128,1) 100%);
+}
+
 /*
 ==================
 Primary Header
@@ -112,6 +127,7 @@ Primary Header
     float: left;
     width: 30%;
     height: 95px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 .primary-nav{
@@ -134,10 +150,15 @@ Bio
 .bio-img{
     margin-right: 30px;
     float: left;
+    width: 30%;
+    height: 30%;
 }
 
-.bio-text{
-    float: left;
+.bio-text p{
+    /* float: left; */
+    text-align: left;
+    width: 100%;
+    padding-right: 20px;
 }
 
 /*
@@ -145,8 +166,6 @@ Bio
 Portfolio
 =====================
 */
-/* use absolute for the named boxes over the images */
-
 .portfolio-pic{
     width: 300px;
     height: 200px;
@@ -189,5 +208,14 @@ Contact
 .contact textarea {
     width: 100%;
     border: 1px solid black;
+    text-align: left;
+}
+
+.button{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 12%;
+    height: 40px;
+    margin: 15px 0px;;
 }
 
